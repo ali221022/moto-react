@@ -1,7 +1,6 @@
 import { Box, Button, Container, ListItemIcon, Menu, MenuItem, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import Basket from "./Basket";
-import { useState, useEffect } from "react";
 import { CartItem } from "../../lib/types/search";
 import { useGlobals } from "../../hooks/useGlobal";
 import { serverApi } from "../../lib/config";
@@ -35,7 +34,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
            <Stack className="menu">
              <Box>
                 <NavLink to="/">
-                  <img className="brand-logo" src="/icons/burak.svg"/>
+                  <img className="brand-logo" src=""/>
                 </NavLink>
              </Box>
             <Stack className="links">
@@ -134,11 +133,11 @@ export default function HomeNavbar(props: HomeNavbarProps) {
            <Stack className={"header-frame"}>
             <Stack className={"detail"}>
                 <Box className={"head-main-txt"}>
-                    World's Most Delicious Cousine
+                    World's Most Thrilling Ride
                 </Box>
                 <Box className={"wel-txt"}>
-                    The Choice, not just a choice
-                    </Box>
+                    The Ride, not just a ride
+                </Box>
                 <Box className={"service-txt"}>24 hours service</Box>
                 <Box className={"signup"}>
                     { !authMember ? (

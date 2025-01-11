@@ -1,7 +1,6 @@
 import { Box, Button, Container, ListItemIcon, Menu, MenuItem, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import Basket from "./Basket";
-import { CartItem } from "../../lib/types/search";
 import { useGlobals } from "../../hooks/useGlobal";
 import { Logout } from "@mui/icons-material";
 import { serverApi } from "../../lib/config";
@@ -31,7 +30,7 @@ export default function OtherNavbar(props: OtherNavbarProps) {
                <Stack className="menu">
                  <Box>
                     <NavLink to="/">
-                      <img className="brand-logo" src="/icons/burak.svg"/>
+                      <img className="brand-logo" src=""/>
                     </NavLink>
                  </Box>
                 <Stack className="links">

@@ -3,8 +3,9 @@
     height: 773px;
 
     display: flex;
-    background: url("/public/img/banner.webp");
+    background: url("/public/img/bacground.jpeg");
     background-size: cover;
+    background-position: center;
 }
 
 .home-navbar .navbar-container {
@@ -21,10 +22,12 @@
     align-items: center;
 }
 
+/*
 .home-navbar .navbar-container .menu .brand-logo {
     width: 125px;
     height: 30px;
 }
+*/
 
 .home-navbar .navbar-container .menu .links {
    min-width: 700px;
@@ -145,7 +148,7 @@
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
-    background: #1976d2;
+    background: #2867a7;
     color: rgb(248, 248, 255);
 }
 
@@ -159,7 +162,6 @@
 .home-navbar .navbar-container .logo-frame .logo-img {
     width: 100%;
     height: 100%;
-    background: url("/public/img/logo.webp");
     background-size: contain;
     background-repeat: no-repeat;
     filter: invert(25%);
@@ -169,11 +171,12 @@
 
 .other-navbar {
     width: 100%;
-    height: 400px;
+    height: 600px;
 
     display: flex;
-    background: url("/public/img/banner.webp");
+    background: url("/public/img/bacground.jpeg");
     background-size: cover;
+    background-position: center;
 }
 
 .other-navbar .navbar-container {
@@ -189,10 +192,12 @@
     align-items: center;
 }
 
+/*
 .other-navbar .navbar-container .menu .brand-logo {
     width: 125px;
     height: 30px;
 }
+*/
 
 .other-navbar .navbar-container .menu .links {
    min-width: 700px;

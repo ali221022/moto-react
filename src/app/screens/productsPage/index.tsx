@@ -3,8 +3,6 @@ import { Route, Switch, useRouteMatch } from "react-router-dom";
 import { Container } from "@mui/material";
 import ChosenProducts from "./ChosenProduct";
 import Products from "./Products";
-import { CartItem } from "../../lib/types/search";
-import { useGlobals } from "../../hooks/useGlobal";
    
 export default function ProductsPage() {
    const products = useRouteMatch();
