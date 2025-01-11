@@ -123,6 +123,7 @@
     letter-spacing: 0%;
     text-align: left;
     height: 36px;
+    min-width: 80px;
 }
 
 .products-page .products .product-wrapper {
@@ -353,8 +354,19 @@
     box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04),inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     box-shadow: 0px 0px 22px 0px rgb(228, 212, 212);
-    background: rgb(13, 21, 24);
+    background: rgb(13, 21, 24);   
+}
+
+.products-page .products .brands-logo .logo-list .logo img  {
+    width: auto;
+    height: 330px; 
+    border-radius: 20px;
     
+    
+     box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04),inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    box-shadow: 0px 0px 22px 0px rgb(228, 212, 212);
+    background: rgb(13, 21, 24); 
 }
 
 .products-page .products .our-address {

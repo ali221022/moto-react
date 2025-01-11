@@ -14,14 +14,11 @@ import { Product } from "../../lib/types/product";
 import { serverApi } from "../../lib/config";
 import { ProductCollection } from "../../lib/enums/product.enum";
 
-
 /** REDUX SLICE & SELECTOR */
 
-const newDishesRetriever = createSelector(
-  retrieveNewDishes,
-  (newDishes) => ({newDishes})
-);
-
+const newDishesRetriever = createSelector(retrieveNewDishes, (newDishes) => ({
+  newDishes,
+}));
 
 export default function NewDishes() {
   const { newDishes } = useSelector(newDishesRetriever);
@@ -32,15 +29,23 @@ export default function NewDishes() {
     <div className={"new-products-frame"}>
       <Container>
         <Stack className={"main"}>
-          <Box className={"category-title"}>Fresh Menu</Box>
+          <Box className={"category-title"}>New Adventures</Box>
           <Stack className={"cards-frame"}>
             <CssVarsProvider>
               {newDishes.length !== 0 ? (
                 newDishes.map((product: Product) => {
-                  const imagePath = `${serverApi}/${product.productImages[0]}`
-                  const sizeVolume = product.productCollection === ProductCollection.DRINK ? product.productVolume + "l" : product.productSize + "size";
+                  const imagePath = `${serverApi}/${product.productImages[0]}`;
+                  const sizeVolume =
+                    product.productCollection ===
+                    ProductCollection.ElectricMotorcycles
+                      ? product.productVolume + "l"
+                      : product.productSize + "size";
                   return (
-                    <Card key={product._id} variant="outlined" className={"card"}>
+                    <Card
+                      key={product._id}
+                      variant="outlined"
+                      className={"card"}
+                    >
                       <CardOverflow>
                         <div className="product-sale">{sizeVolume}</div>
                         <AspectRatio ratio="1">
@@ -55,7 +60,9 @@ export default function NewDishes() {
                               {product.productName}
                             </Typography>
                             <Divider width="2" height="24" bg="#d9d9d9" />
-                            <Typography className={"price"}>${product.productPrice}</Typography>
+                            <Typography className={"price"}>
+                              ${product.productPrice}
+                            </Typography>
                           </Stack>
                           <Stack>
                             <Typography className={"views"}>
@@ -71,7 +78,9 @@ export default function NewDishes() {
                   );
                 })
               ) : (
-                <Box className={"no-data"}>New products are not available!</Box>
+                <Box className={"no-data"}>
+                  New Adventures are not available!
+                </Box>
               )}
             </CssVarsProvider>
           </Stack>

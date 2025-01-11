@@ -30,7 +30,7 @@ export default function PopularDishes() {
     <div className={"popular-dishes-frame"}>
       <Container>
         <Stack className={"popular-section"}>
-          <Box className={"category-title"}>Popular Dishes</Box>
+          <Box className={"category-title"}>Fan Favorite Bikes</Box>
           <Stack className={"cards-frame"}>
             {popularDishes.length !== 0 ? (
               popularDishes.map((product: Product) => {
@@ -93,7 +93,7 @@ export default function PopularDishes() {
               })
             ) : (
               <Box className={"no-data"}>
-                Popular product are not available!
+                Fan Favorite Bikes are not available!
               </Box>
             )}
           </Stack>
