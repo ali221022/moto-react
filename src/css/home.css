@@ -1,51 +1,7 @@
 .home-page {
   width: 100%;
   height: auto;
-}
-
-/** STATISTICS **/
-
-.home-page .static-frame {
-    width: 100%;
-    height: 236px;
-    background: #343434;
-}
-
-.home-page .static-frame .info {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.home-page .static-frame .info .static-box {
-    width: 200px;
-    height: 116px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.home-page .static-frame .info .static-box .static-num {
-    font-family: Poppins;
-    font-size: 54px;
-    font-weight: 600;
-    line-height: 81px;
-    letter-spacing: 0%;
-    
-    color: rgb(215, 182, 134);
-}
-
-.home-page .static-frame .info .static-box .static-text {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0%;
-    
-    color: rgb(215, 181, 134);
+  background-color: white;
 }
 
 /** Popular Dishes **/
@@ -95,6 +51,35 @@
     min-height: 430px;
     min-width: 300px;
     cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .home-page .popular-dishes-frame .cards-frame .card:hover {
+    transform: translateY(-10px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card:hover img {
+    animation: moveImage 1s infinite alternate ease-in-out;
+  }
+  
+  @keyframes moveImage {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
   }
   
   .home-page .popular-dishes-frame .cards-frame .card .card-cover {
@@ -152,30 +137,41 @@
   }
   
   .home-page .new-products-frame .main .card {
-    height: 335px;
+    height: 365px;
     width: 290px;
     cursor: pointer;
+
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-page .new-products-frame .main .card:hover {
+    transform: scale(1.05) translateZ(50px);
+  }
+
+  .home-page .new-products-frame .main .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .home-page .new-products-frame .main .card:hover img {
+    animation: zoomIn 1s forwards ease-in-out;
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1) translateZ(0);
+    }
+    100% {
+      transform: scale(1.2) translateZ(50px);
+    }
   }
   
-  .home-page .new-products-frame .product-sale {
-    position: absolute;
-    margin-top: 10px;
-    z-index: 100;
-    width: 90px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ff9200;
-    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 21px;
-    color: #f8f8ff;
-  }
+  
   
   .home-page .new-products-frame .product-detail {
     width: auto;
@@ -289,8 +285,33 @@
     margin: 5px;
     min-height: 305px;
     min-width: 305px;
+
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-page .cards-frame .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
   }
   
+  .home-page .cards-frame .card:hover img {
+    animation: zoomIn 1s forwards ease-in-out;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1) translateZ(0);
+    }
+    100% {
+      transform: scale(1.2) translateZ(50px);
+    }
+  }
+
   .home-page .cards-frame .info {
     font-size: medium;
     text-align: center;
@@ -303,6 +324,7 @@
   .home-page .cards-frame .member-nickname {
     text-align: center;
     font-weight: medium;
+    font-size: 22px;
   }
   
   .home-page .cards-frame .no-data {

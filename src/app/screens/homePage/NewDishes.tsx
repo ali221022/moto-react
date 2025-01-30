@@ -41,8 +41,7 @@ export default function NewDishes() {
                       variant="outlined"
                       className={"card"}
                     >
-                      <CardOverflow>
-                        <div className="product-sale"></div>
+                      <CardOverflow>    
                         <AspectRatio ratio="1">
                           <img src={imagePath} alt="" />
                         </AspectRatio>

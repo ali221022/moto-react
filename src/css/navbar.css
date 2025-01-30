@@ -1,35 +1,56 @@
 .home-navbar {
+    position: relative;
     width: 100%;
     height: 773px;
+    overflow: hidden;
+  }
+  
+  .home-navbar .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Contentni video ustida joylashtirish uchun */
+  }
+  
+  .home-navbar .navbar-container {
+    position: relative;
+    z-index: 1; /* Video ustiga joylashadi */
+  }
 
-    display: flex;
-    background: url("/public/img/bacground.jpeg");
-    background-size: cover;
-    background-position: center;
+.home-navbar  .menu {
+    position: fixed;
+    padding: 22px 0;
+    width: 100%;
+    height: 87px;
+    display: flex
+;
+    flex-direction: row;
+    box-sizing: border-box;
+    z-index: 99;
+    align-items: center;
+    border-top: 1px solid hsla(0, 2%, 51%, .07);
+    background-color: rgba(44, 44, 48, 0.62);
 }
 
-.home-navbar .navbar-container {
-    margin-top: 55px;
-    height: 642px;
-}
 
-.home-navbar .navbar-container .menu {
-    height: 50px;
-
+.home-navbar  .menu  .navbar-top  {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-/*
-.home-navbar .navbar-container .menu .brand-logo {
-    width: 125px;
-    height: 30px;
-}
-*/
 
-.home-navbar .navbar-container .menu .links {
+.home-navbar  .menu .brand-logo {
+    width: 150px;
+    height: 70px;
+}
+
+
+.home-navbar  .menu .links {
    min-width: 700px;
 
    display: flex;
@@ -38,14 +59,18 @@
    align-items: center; 
 }
 
-.home-navbar .navbar-container .menu .links .login-button {
-    background: #3776CC;
+.home-navbar  .menu .links .login-button {
+    background: transparent;
     color: #f8f8ff;
 }
 
-.home-navbar .navbar-container .menu .user-avatar {
-    width: 50px;
-    height: 50px;
+.home-navbar  .menu .links .login-button:hover {
+    background: #2867a7;
+}
+
+.home-navbar .menu .user-avatar {
+    width: 60px;
+    height: 60px;
 
     border-radius: 24px;
 }
@@ -82,7 +107,7 @@
 }
 
 .home-navbar .navbar-container .header-frame {
-    margin-top: 142px;
+    margin-top: 250px;
     height: 462px;
 
     display: flex;
@@ -148,8 +173,12 @@
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0%;
-    background: #2867a7;
+    background: transparent;
     color: rgb(248, 248, 255);
+}
+
+.home-navbar .navbar-container .header-frame .detail .signup-botton:hover {
+    background: #2867a7;
 }
 
 .home-navbar .navbar-container .logo-frame {
@@ -179,8 +208,19 @@
     background-position: center;
 }
 
-.other-navbar .navbar-container {
-    margin-top: 55px;
+.other-navbar .other-menu {
+    position: fixed;
+    padding: 22px 0;
+    width: 100%;
+    height: 87px;
+    display: flex
+;
+    flex-direction: row;
+    box-sizing: border-box;
+    z-index: 99;
+    align-items: center;
+    border-top: 1px solid hsla(0, 2%, 51%, .07);
+    background-color: rgba(44, 44, 48, 0.62);
 }
 
 .other-navbar .navbar-container .menu {
@@ -192,12 +232,12 @@
     align-items: center;
 }
 
-/*
+
 .other-navbar .navbar-container .menu .brand-logo {
-    width: 125px;
-    height: 30px;
+    width: 150px;
+    height: 70px;
 }
-*/
+
 
 .other-navbar .navbar-container .menu .links {
    min-width: 700px;
@@ -209,13 +249,17 @@
 }
 
 .other-navbar .navbar-container .menu .links .login-button {
-    background: #3776CC;
+    background: transparent;
     color: #f8f8ff;
 }
 
+.other-navbar .navbar-container .menu .links .login-button:hover {
+    background: #3776CC;
+}
+
 .other-navbar .navbar-container .menu .user-avatar {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 
     border-radius: 24px;
 }

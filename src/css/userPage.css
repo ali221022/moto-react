@@ -43,7 +43,7 @@
 	font-style: normal;
 	font-weight: 600;
 	font-size: 45px;
-	color: #f8f8ff;
+	color: black;
 }
 
 .my-page-left .menu-content {
@@ -71,6 +71,7 @@
 }
 
 .my-page-frame .my-page-right {
+	margin-top: 120px;
 	margin-left: 30px;
 	width: 30%;
 	height: auto;
@@ -87,7 +88,7 @@
 	flex-direction: column;
 	align-items: center;
 	background: #f6f2ff;
-	box-shadow: 15px 14px 4px rgba(0, 0, 0, 0.25), inset -1px 0px 16px 13px rgb(24 23 112 / 20%);
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 	border-radius: 16px;
 }
 
@@ -217,14 +218,16 @@
 	height: auto;
 	display: flex;
 	flex-direction: column;
+	margin-top: 10px;
 }
 .user-page .settings .spec-label {
+	margin-top: 15px;
 	font-family: 'Source Serif Pro';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 25px;
-	color: #f8f8ff;
+	color: black;
 }
 
 .user-page .settings .spec-input {
@@ -274,14 +277,15 @@
 }
 
 .user-page .settings .member-media-frame .mb-image {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 }
 
-.user-page .settings .media_change-box {
+.user-page .settings .media-change-box {
 	position: relative;
 	margin-left: 20px;
+	margin-top: 50px;
 	width: auto;
 	height: 100%;
 	display: flex;

@@ -245,7 +245,6 @@ export default function Products() {
                         className={"product-img"}
                         sx={{ backgroundImage: `url(${imagePath})` }}
                       >
-                        <div className={"product-sale"}></div>
                         <Button
                           className={"shop-btn"}
                           onClick={(e) => {

@@ -26,11 +26,12 @@ export default function OtherNavbar(props: OtherNavbarProps) {
    const { authMember, cartItems, onAdd, onRemove, onDelete, onDeleteAll } = useGlobals();
     return (
         <div className="other-navbar">
-            <Container className="navbar-container">
+           <Stack className="other-menu">
+           <Container className="navbar-container">
                <Stack className="menu">
                  <Box>
                     <NavLink to="/">
-                      <img className="brand-logo" src=""/>
+                      <img className="brand-logo" src="/icons/burg1.svg"/>
                     </NavLink>
                  </Box>
                 <Stack className="links">
@@ -127,6 +128,7 @@ export default function OtherNavbar(props: OtherNavbarProps) {
                 </Stack>
                </Stack>
             </Container> 
+           </Stack>
         </div>
         );
 }

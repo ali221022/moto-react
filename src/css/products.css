@@ -1,6 +1,7 @@
 .products-page {
     width: 100%;
     height: auto;
+    background: whitesmoke;
 }
 
 .products-page .products {
@@ -42,6 +43,7 @@
 }
 
 .products-page .products .single-search-big-box .single-search-input {
+    width: 100%;  
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 18.5px;
@@ -152,7 +154,7 @@
   .products-page .products .product-card {
     margin-top: 40px;
     margin-right: 24px;
-    width: 270px;
+    width: 330px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -164,25 +166,9 @@
     width: 273px;
     height: 275px;
     background-size: cover;
+    background-position: center;
     border-radius: 0px 50px 0px 0px;
-  }
-  
-  .products-page .products .product-img .product-sale {
-    margin: 10px;
-    width: 90px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ff9200;
-    box-shadow: 4px 6px 20px #0000001a;
-    border-radius: 25px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 21px;
-    color: #ffffff;
+   
   }
   
   .products-page .products .product-card .product-desc {
@@ -354,7 +340,9 @@
     box-shadow: inset 0px 4px 16px 0px rgba(242, 189, 87, 0.04),inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     box-shadow: 0px 0px 22px 0px rgb(228, 212, 212);
-    background: rgb(13, 21, 24);   
+    background: rgb(13, 21, 24);  
+    ;
+   
 }
 
 .products-page .products .brands-logo .logo-list .logo img  {
@@ -367,7 +355,25 @@
 
     box-shadow: 0px 0px 22px 0px rgb(228, 212, 212);
     background: rgb(13, 21, 24); 
+
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
 }
+
+.products-page .products .brands-logo .logo-list .logo img:hover 
+  {
+    animation: zoomIn 1s forwards ease-in-out;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1) translateZ(0);
+    }
+    100% {
+      transform: scale(1.2) translateZ(50px);
+    }
+  }
+
 
 .products-page .products .our-address {
     margin-top: 80px;
