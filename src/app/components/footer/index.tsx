@@ -23,10 +23,10 @@ export default function Footer() {
             Focusing on thrilling rides as well as the adventurous spirit of youth, Turbo Moto aims to bring the joy of motorcycling back. Turbo Moto creates an unforgettable experience with every ride.
             </Box>
             <Box className="sns-context">
-              <img src={"/icons/facebook.svg"} />
-              <img src={"/icons/twitter.svg"} />
-              <img src={"/icons/instagram.svg"} />
-              <img src={"/icons/youtube.svg"} />
+              <img src={"/icons/facebook.svg"} alt="" />
+              <img src={"/icons/twitter.svg"} alt="" />
+              <img src={"/icons/instagram.svg"} alt="" />
+              <img src={"/icons/youtube.svg"} alt="" />
             </Box>
           </Stack>
           <Stack sx={{ ml: "288px" }} flexDirection={"row"}>

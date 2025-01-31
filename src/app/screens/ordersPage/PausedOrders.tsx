@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Box, Stack } from "@mui/material";
 import Button from "@mui/material/Button";
 import TabPanel from "@mui/lab/TabPanel"
@@ -12,7 +12,6 @@ import { T } from "../../lib/types/common";
 import { sweetErrorHandling } from "../../lib/sweetAlert";
 import { OrderStatus } from "../../lib/enums/order.enum";
 import { useGlobals } from "../../hooks/useGlobal";
-import { Message } from "@mui/icons-material";
 import OrderService from "../../services/OrderService";
 
 /** REDUX SLICE & SELECTOR */
@@ -98,7 +97,7 @@ export default function PausedOrders(props: PausedOrdersProps) {
                         <p className={"title-dish"}>{product.productName}</p>
                         <Box className={"price-box"}>
                           <p>${item.itemPrice}</p>
-                          <img src={"/icons/close.svg"} />
+                          <img src={"/icons/close.svg"} alt="" />
                           <p>{item.itemQuantity}</p>
                           <img src={"/icons/pause.svg"} alt="" />
                           <p style={{ marginLeft: "15px" }}>${item.itemQuantity * item.itemPrice}</p>
@@ -115,7 +114,7 @@ export default function PausedOrders(props: PausedOrdersProps) {
                    <img src={"/icons/plus.svg"}  style={{ marginLeft: "20px" }} alt="" />
                    <p>Deliver cost</p>
                    <p>${order.orderDelivery}</p>
-                   <img src={"/icons/pause.svg"}  style={{ marginLeft: "20px" }} />
+                   <img src={"/icons/pause.svg"}  style={{ marginLeft: "20px" }} alt="" />
                    <p>Total</p>
                    <p>${order.orderTotal}</p>
                 </Box>

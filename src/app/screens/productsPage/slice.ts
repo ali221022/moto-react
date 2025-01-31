@@ -24,7 +24,7 @@ const productsPageSlice = createSlice({
 });
 
 export const {
-  setMoto: setMoto,
+  setMoto,
   setChosenProduct,
   setProducts,
 } = productsPageSlice.actions;

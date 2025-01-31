@@ -101,6 +101,7 @@ export default function OrdersPage() {
                       ? `${serverApi}/${authMember.memberImage}`
                       : "/icons/default-user.svg"
                   }
+                  alt=""
                   className={"order-user-avatar"}
                 />
                 <div className={"order-user-icon-box"}>
@@ -110,6 +111,7 @@ export default function OrdersPage() {
                         ? "/icons/restaurant.svg"
                         : "/icons/user-badge.svg"
                     }
+                    alt=""
                     className={"order-user-prof-img"}
                   />
                 </div>
@@ -170,10 +172,10 @@ export default function OrdersPage() {
               className={"card-input"}
             />
             <div className={"cards-box"}>
-              <img src={"/icons/western-card.svg"} />
-              <img src={"/icons/master-card.svg"} />
-              <img src={"/icons/paypal-card.svg"} />
-              <img src={"/icons/visa-card.svg"} />
+              <img src={"/icons/western-card.svg"} alt="" />
+              <img src={"/icons/master-card.svg"} alt="" />
+              <img src={"/icons/paypal-card.svg"} alt="" />
+              <img src={"/icons/visa-card.svg"} alt="" />
             </div>
           </Box>
         </Stack>

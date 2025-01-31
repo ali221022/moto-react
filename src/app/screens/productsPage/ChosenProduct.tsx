@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Container, Stack, Box } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
@@ -45,7 +45,7 @@ const motoRetriever = createSelector(
 
 export default function ChosenProduct() {
   const { productId } = useParams<{ productId: string }>();
-  const { setMoto: setMoto, setChosenProduct } = actionDispatch(useDispatch());
+  const { setMoto, setChosenProduct } = actionDispatch(useDispatch());
   const { chosenProduct } = useSelector(chosenProductRetriever);
   const { moto } = useSelector(motoRetriever);
   const { onAdd } = useGlobals();
@@ -81,7 +81,7 @@ export default function ChosenProduct() {
               const imagePath = `${serverApi}/${ele}`;
               return (
                 <SwiperSlide key={index}>
-                  <img className="slider-image" src={imagePath} />
+                  <img className="slider-image" src={imagePath} alt="" />
                 </SwiperSlide>
               );
             })}

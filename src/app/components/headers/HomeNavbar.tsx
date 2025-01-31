@@ -45,7 +45,7 @@ import {
           <Container className="navbar-top">
           <Box>
               <NavLink to="/">
-                <img className="brand-logo" src="/icons/burg1.svg" />
+                <img className="brand-logo" src="/icons/burg1.svg" alt="" />
               </NavLink>
             </Box>
             <Stack className="links">
@@ -104,6 +104,7 @@ import {
                       ? `${serverApi}/${authMember?.memberImage}`
                       : "/icons/default-user.svg"
                   }
+                  alt=""
                   aria-haspopup={"true"}
                   onClick={handleLogoutClick}
                 />

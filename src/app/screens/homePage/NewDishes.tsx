@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Box, Stack } from "@mui/material";
 import AspectRatio from "@mui/joy/AspectRatio";
 import Card from "@mui/joy/Card";
@@ -12,7 +11,6 @@ import { createSelector } from "reselect";
 import { retrieveNewDishes } from "./selector";
 import { Product } from "../../lib/types/product";
 import { serverApi } from "../../lib/config";
-import { ProductCollection } from "../../lib/enums/product.enum";
 
 /** REDUX SLICE & SELECTOR */
 

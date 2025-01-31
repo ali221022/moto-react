@@ -6,7 +6,6 @@ import { useState } from "react";
 import { MemberUpdateInput } from "../../lib/types/member";
 import { T } from "../../lib/types/common";
 import { sweetErrorHandling, sweetTopSmallSuccessAlert } from "../../lib/sweetAlert";
-import { Message } from "@mui/icons-material";
 import { Messages, serverApi } from "../../lib/config";
 import MemberService from "../../services/MemberService";
 
@@ -87,7 +86,7 @@ export function Settings() {
   return (
     <Box className={"settings"}>
       <Box className={"member-media-frame"}>
-        <img src={memberImage} className={"mb-image"} />
+        <img src={memberImage} className={"mb-image"} alt="" />
         <div className={"media-change-box"}>
           <span>Upload image</span>
           <p>JPG, JPEG, PNG formats only!</p>

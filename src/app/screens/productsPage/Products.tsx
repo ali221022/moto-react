@@ -1,5 +1,5 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
-import { Container, Button, Box, Stack, colors, Input } from "@mui/material";
+import { ChangeEvent, useEffect, useState } from "react";
+import { Container, Button, Box, Stack } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
@@ -15,7 +15,6 @@ import ProductService from "../../services/ProductService";
 import { ProductCollection } from "../../lib/enums/product.enum";
 import { serverApi } from "../../lib/config";
 import { useHistory } from "react-router-dom";
-import { CartItem } from "../../lib/types/search";
 import { useGlobals } from "../../hooks/useGlobal";
 
 /** REDUX SLICE & SELECTOR */
@@ -261,6 +260,7 @@ export default function Products() {
                           <img
                             src="/icons/shopping-cart.svg"
                             style={{ display: "flex" }}
+                            alt=""
                           />
                         </Button>
                         <Button className={"view-btn"} sx={{ right: "36px" }}>
@@ -332,6 +332,7 @@ export default function Products() {
         <Container className={"address-blog"}>
           <Box className={"address-text"}>Our address</Box>
           <iframe
+            title="OQ MOZOR JOME MASJIDI map"
             style={{ marginTop: "60px" }}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40483.87517336351!2d71.64412963365315!3d40.40686745184124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb9f24d45c9ec7%3A0xdcccc38c577329c5!2sOQ%20MOZOR%20OTA%20JOME%20MASJIDI!5e0!3m2!1sru!2skr!4v1736602483293!5m2!1sru!2skr" 
             width={"1300px"}
