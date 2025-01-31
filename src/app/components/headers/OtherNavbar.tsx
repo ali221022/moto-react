@@ -31,7 +31,7 @@ export default function OtherNavbar(props: OtherNavbarProps) {
                <Stack className="menu">
                  <Box>
                     <NavLink to="/">
-                      <img className="brand-logo" src="/icons/burg1.svg"/>
+                      <img className="brand-logo" src="/icons/burg1.svg" alt="" />
                     </NavLink>
                  </Box>
                 <Stack className="links">
@@ -79,6 +79,7 @@ export default function OtherNavbar(props: OtherNavbarProps) {
                      : "/icons/default-user.svg"} 
                  aria-haspopup={"true"}
                     onClick={handleLogoutClick}
+                    alt=""
                     />
                    )}
                      
